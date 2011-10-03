@@ -1,0 +1,7 @@
+inherit gnome2
+
+DESCRIPTION="IBus Korean X Input Module engine"
+HOMEPAGE="http://code.google.com/p/ibus/"
+SRC_URI="http://ibus.googlecode.com/files/${P}.tar.gz"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/ibus"
