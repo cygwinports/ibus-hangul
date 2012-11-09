@@ -1,0 +1,18 @@
+--- origsrc/ibus-hangul-1.4.1/setup/Makefile.am	2012-04-08 08:35:15.000000000 -0500
++++ src/ibus-hangul-1.4.1/setup/Makefile.am	2012-11-09 00:51:57.485957700 -0600
+@@ -82,14 +82,7 @@ install-exec-hook:
+ 	$(mkdir_p) $(DESTDIR)$(bindir)
+ 	cd $(DESTDIR)$(bindir) && \
+ 	rm -f ibus-setup-hangul && \
+-	a="$(bindir)"; b="$(libexecdir)"; updir=""; downdir=""; \
+-	while test "$$a" != "$$b"; do \
+-		bbase=`basename $$b`; \
+-		updir="../$$updir"; \
+-		downdir="$$bbase/$$downdir"; \
+-		a=`dirname $$a`; b=`dirname $$b`; \
+-	done; \
+-	$(LN_S) $$updir$${downdir}ibus-setup-hangul ibus-setup-hangul
++	$(LN_S) $(libexecdir)/ibus-setup-hangul ibus-setup-hangul
+ 
+ uninstall-hook:
+ 	cd "$(DESTDIR)$(bindir)" && rm -f ibus-setup-hangul

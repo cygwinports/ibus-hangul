@@ -1,7 +1,0 @@
-category: X11
-requires: ibus libglib2.0_0 libhangul1 libibus1.0_0 libintl8 python python-gobject python-gtk2.0 python-ibus
-sdesc: "IBus Korean Input Method engine"
-ldesc: "IBus is an Intelligent Input Bus. It is a new input framework 
-for Linux OS. It provides full featured and user friendly input method 
-user interface. It also may help developers to develop input method 
-easily."
