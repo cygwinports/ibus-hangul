@@ -2,7 +2,7 @@ inherit python gnome2
 
 NAME="ibus-hangul"
 VERSION=1.4.1
-RELEASE=2
+RELEASE=3
 CATEGORY="X11"
 SUMMARY="IBus Korean X Input Module engine"
 DESCRIPTION="IBus is an Intelligent Input Bus. It is a new input framework
