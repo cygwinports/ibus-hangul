@@ -1,8 +1,8 @@
 inherit python gnome2
 
 NAME="ibus-hangul"
-VERSION=1.4.1
-RELEASE=3
+VERSION=1.4.2
+RELEASE=1
 CATEGORY="X11"
 SUMMARY="IBus Korean X Input Module engine"
 DESCRIPTION="IBus is an Intelligent Input Bus. It is a new input framework
@@ -10,7 +10,5 @@ for X11 systems. It provides full featured and user friendly input method
 user interface. It also may help developers to develop input method easily."
 REQUIRES="ibus"
 HOMEPAGE="http://code.google.com/p/ibus/"
-SRC_URI="http://ibus.googlecode.com/files/${P}.tar.gz"
+SRC_URI="http://ibus.googlecode.com/files/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="1.4.1-bindir-symlink.patch"
-
-CYGCONF_ARGS="--libexecdir=/usr/lib/ibus"
